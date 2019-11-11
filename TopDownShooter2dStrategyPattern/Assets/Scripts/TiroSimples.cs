@@ -5,7 +5,7 @@ using UnityEngine;
 public class TiroSimples : Arma,IArma
 
 {
-    [SerializeField] private float velocidade;
+    float velocidade;
     private Transform firePoint;
 
 
@@ -13,7 +13,8 @@ public class TiroSimples : Arma,IArma
     void Start()
     {
         firePoint = GetComponentInChildren<Transform>().GetChild(0);
-
+        velocidade = 10;
+        damage = 1;
     }
 
     

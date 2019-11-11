@@ -13,7 +13,7 @@ public class ExplosionController : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
-        Invoke("Die", Mathf.CeilToInt(anim.GetNextAnimatorStateInfo(0).length));
+        Invoke("Die", Mathf.CeilToInt(anim.GetCurrentAnimatorStateInfo(0).length));
        
     }
 
